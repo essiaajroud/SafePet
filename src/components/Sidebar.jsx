@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
 import Logo from "../imgs/logo.png";
-import { UilSignOutAlt } from "@iconscout/react-unicons";
+import { UilSignOutAlt } from  "@iconscout/react-unicons";
 import { SidebarData } from "../Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
 
 const Sidebar = () => {
   const [selected, setSelected] = useState(0);
-
-  const [expanded, setExpaned] = useState(true)
+  const [expanded, setExpaned] = useState(true);
 
   const sidebarVariants = {
     true: {
@@ -32,9 +31,13 @@ const Sidebar = () => {
       {/* logo */}
       <div className="logo">
         <img src={Logo} alt="logo" />
+        <div className="lecture">
         <span>
           Safe<span>P</span>et
         </span>
+        <p>Soins Experts, Santé Animale Précise,
+ Respect Propriétaire Assuré</p>
+        </div>
       </div>
 
       <div className="menu">

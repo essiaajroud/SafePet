@@ -1,9 +1,12 @@
 // Sidebar imports
+
 import {
   UilEstate,
   UilUsersAlt,
   UilPackage,
-  UilCalendarAlt
+  UilCalendarAlt,
+  UilMessage,
+  UilMoon 
 } from "@iconscout/react-unicons";
 
 
@@ -21,6 +24,11 @@ export const SidebarData = [
     icon: UilUsersAlt,
     heading: "Patients",
   },
+  {
+    icon: UilMessage,
+    heading: "Message",
+  },
+
 
   {
     icon: UilPackage ,
